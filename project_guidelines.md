@@ -23,6 +23,22 @@ Week 7: Project Insight II (finalize scope and direction)
 Week 10: Final project demo—showcase your agent!
 Project Rules:
 
+Community
+Join the course Discord: For Q&A, code sharing, project brainstorming, and peer support.
+Peer Feedback: Comment on at least two peers’ project ideas (via Discord or Canvas discussion).
+MCP & Open Tools: You’ll set up and experiment with tools like MCP (Model Context Protocol) and the latest open-source agents (LangChain, vLLM, etc).
+🛠️ Submission Rules & Best Practices
+
+Homework:
+Complete all tasks in one repo.
+Submit via Canvas—paste your GitHub repo link for each week’s assignment.
+Project:
+Each project phase (insight, final demo) requires a separate repo submission via Canvas.
+Repo Organization:
+Use clear folders, commit messages, and documentation.
+Cite all outside resources and credit all collaborators.
+
+
 All code must be in your own GitHub repo.
 Submit your project repo link via Canvas when prompted.
 All submissions must be your own work—collaboration for discussion and Q&A is encouraged, but code must be original.
