@@ -58,6 +58,7 @@ to try the blend, with a special discount for existing subscribers.
 
 
 DeepSeekR1-1.5 Test Result
+-------------------------------------------------------------------------------------------------------------------
 
 PS C:\Users\Administrator> ollama  run deepseek-r1:1.5b
 >>> Please tell me what's your LLM Model?
