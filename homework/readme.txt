@@ -15,7 +15,8 @@ Upload Basic_phython_syntax.py
 - [LangChain Quickstart Docs](https://docs.langchain.com/langgraph-platform)
 2.Install & test LongChain & LongGraph on Python Virtual Environment ---Done
 - [Using Ollama with LangChain Agents (YouTube)](https://www.youtube.com/watch?v=vgncj7MJbVU)
-3.Install Ollama & LongChain. Test  5 kind LLM on local machine. 
+3.Install Ollama & LongChain.
+Test  5 kinds LLM on local machine. 
 C:\Users\Administrator>ollama list
 NAME                  ID              SIZE      MODIFIED
 llama3.2:3b           a80c4f17acd5    2.0 GB    6 minutes ago
