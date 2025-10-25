@@ -1,0 +1,30 @@
+C:\Users\Administrator\PycharmProjects\PythonProject\.venv\Scripts\python.exe C:\Users\Administrator\PycharmProjects\PythonProject\Basic_Phyton_Syntax.py 
+1
+2
+3
+h
+l
+dict_items([(2, 4), (4, 16), (6, 36), (8, 64), (10, 100)])
+Alice
+alice@example.com
+0 dog
+1 cat
+2 mouse
+{'aa': 12, 'bb': 21}
+{'aa': 12, 'bb': 21}
+{'aa': 12, 'bb': 21}
+<function create_avg.<locals>.avg at 0x000002116D9587C0>
+3.0
+4.0
+5.0
+<function create_avg.<locals>.avg at 0x000002116DA0B4C0>
+3.0
+4.0
+5.0
+<function create_avg.<locals>.avg_func at 0x000002116D95A5C0>
+3.0
+4.0
+5.0
+不能直接访问
+
+Process finished with exit code 0
