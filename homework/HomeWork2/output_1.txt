@@ -1,1 +1,17 @@
+C:\Users\Administrator\Downloads\tesseract-5.5.1\test>tesseract Pizza_Chat_TestResult.png output1
+Detected 12 diacritics
 
+C:\Users\Administrator\Downloads\tesseract-5.5.1\test>dir
+ Volume in drive C is Acer
+ Volume Serial Number is 26FD-1051
+
+ Directory of C:\Users\Administrator\Downloads\tesseract-5.5.1\test
+
+2025-10-28  08:51 AM    <DIR>          .
+2025-10-28  08:49 AM    <DIR>          ..
+2025-10-28  08:51 AM             1,621 output1.txt
+2025-10-27  02:04 AM           188,507 Pizza_Chat_TestResult.png
+               2 File(s)        190,128 bytes
+               2 Dir(s)  12,473,794,560 bytes free
+
+C:\Users\Administrator\Downloads\tesseract-5.5.1\test>
