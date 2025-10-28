@@ -6,7 +6,6 @@ C:\Users\Administrator\Downloads\tesseract-5.5.1\test>dir
  Volume Serial Number is 26FD-1051
 
  Directory of C:\Users\Administrator\Downloads\tesseract-5.5.1\test
-
 2025-10-28  08:51 AM    <DIR>          .
 2025-10-28  08:49 AM    <DIR>          ..
 2025-10-28  08:51 AM             1,621 output1.txt
