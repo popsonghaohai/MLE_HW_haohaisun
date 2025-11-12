@@ -1,0 +1,16 @@
+tkinter 
+threading
+queue
+numpy 
+sounddevice
+soundfile
+tempfile
+datetime  
+collections  
+typing  
+subprocess
+sys
+itertools
+openai
+whisper
+pyttsx3
