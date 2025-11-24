@@ -1,0 +1,266 @@
+C:\Users\sunha\PycharmProjects\PythonProject\.venv\Scripts\python.exe D:\AI_Project\PycharmProjects\PycharmProjects\PythonProject\Scrape_arXiv_200papers.py 
+None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+2025-11-23 23:12:36,435 - INFO - Fetching 50 papers from cs.CL...
+2025-11-23 23:12:36,545 - INFO - Parsed 50 papers from API.
+2025-11-23 23:12:36,546 - INFO - Processing paper 1/50: Masked-and-Reordered Self-Supervision for Reinforcement Learning from Verifiable Rewards
+2025-11-23 23:12:36,546 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17473v1.pdf
+2025-11-23 23:12:36,546 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17473v1.pdf
+2025-11-23 23:12:36,592 - INFO - Chunking text...
+Token indices sequence length is longer than the specified maximum sequence length for this model (13736 > 512). Running this sequence through the model will result in indexing errors
+2025-11-23 23:12:36,631 - INFO - Created 30 chunks.
+2025-11-23 23:12:36,631 - INFO - Processing paper 2/50: Planning with Sketch-Guided Verification for Physics-Aware Video Generation
+2025-11-23 23:12:36,631 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17450v1.pdf
+2025-11-23 23:12:36,631 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17450v1.pdf
+2025-11-23 23:12:36,695 - INFO - Chunking text...
+2025-11-23 23:12:36,746 - INFO - Created 37 chunks.
+2025-11-23 23:12:36,746 - INFO - Processing paper 3/50: SMILE: A Composite Lexical-Semantic Metric for Question-Answering Evaluation
+2025-11-23 23:12:36,746 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17432v1.pdf
+2025-11-23 23:12:36,746 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17432v1.pdf
+2025-11-23 23:12:36,809 - INFO - Chunking text...
+2025-11-23 23:12:36,860 - INFO - Created 38 chunks.
+2025-11-23 23:12:36,860 - INFO - Processing paper 4/50: Beyond Multiple Choice: A Hybrid Framework for Unifying Robust Evaluation and Verifiable Reasoning Training
+2025-11-23 23:12:36,860 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17405v1.pdf
+2025-11-23 23:12:36,860 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17405v1.pdf
+2025-11-23 23:12:36,936 - INFO - Chunking text...
+2025-11-23 23:12:37,001 - INFO - Created 46 chunks.
+2025-11-23 23:12:37,001 - INFO - Processing paper 5/50: PUCP-Metrix: A Comprehensive Open-Source Repository of Linguistic Metrics for Spanish
+2025-11-23 23:12:37,002 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17402v1.pdf
+2025-11-23 23:12:37,002 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17402v1.pdf
+2025-11-23 23:12:37,027 - INFO - Chunking text...
+2025-11-23 23:12:37,056 - INFO - Created 24 chunks.
+2025-11-23 23:12:37,057 - INFO - Processing paper 6/50: Selective Rotary Position Embedding
+2025-11-23 23:12:37,057 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17388v1.pdf
+2025-11-23 23:12:37,057 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17388v1.pdf
+2025-11-23 23:12:37,130 - INFO - Chunking text...
+2025-11-23 23:12:37,199 - INFO - Created 51 chunks.
+2025-11-23 23:12:37,199 - INFO - Processing paper 7/50: Don't Learn, Ground: A Case for Natural Language Inference with Visual Grounding
+2025-11-23 23:12:37,199 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17358v1.pdf
+2025-11-23 23:12:37,199 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17358v1.pdf
+2025-11-23 23:12:37,234 - INFO - Chunking text...
+2025-11-23 23:12:37,278 - INFO - Created 33 chunks.
+2025-11-23 23:12:37,278 - INFO - Processing paper 8/50: A new kid on the block: Distributional semantics predicts the word-specific tone signatures of monosyllabic words in conversational Taiwan Mandarin
+2025-11-23 23:12:37,278 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17337v1.pdf
+2025-11-23 23:12:37,278 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17337v1.pdf
+2025-11-23 23:12:37,354 - INFO - Chunking text...
+2025-11-23 23:12:37,426 - INFO - Created 51 chunks.
+2025-11-23 23:12:37,426 - INFO - Processing paper 9/50: Robot Confirmation Generation and Action Planning Using Long-context Q-Former Integrated with Multimodal LLM
+2025-11-23 23:12:37,426 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17335v1.pdf
+2025-11-23 23:12:37,426 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17335v1.pdf
+2025-11-23 23:12:37,452 - INFO - Chunking text...
+2025-11-23 23:12:37,480 - INFO - Created 22 chunks.
+2025-11-23 23:12:37,480 - INFO - Processing paper 10/50: MusicAIR: A Multimodal AI Music Generation Framework Powered by an Algorithm-Driven Core
+2025-11-23 23:12:37,480 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17323v1.pdf
+2025-11-23 23:12:37,480 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17323v1.pdf
+2025-11-23 23:12:37,505 - INFO - Chunking text...
+2025-11-23 23:12:37,533 - INFO - Created 22 chunks.
+2025-11-23 23:12:37,534 - INFO - Processing paper 11/50: Humanlike Multi-user Agent (HUMA): Designing a Deceptively Human AI Facilitator for Group Chats
+2025-11-23 23:12:37,534 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17315v1.pdf
+2025-11-23 23:12:37,534 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17315v1.pdf
+2025-11-23 23:12:37,555 - INFO - Chunking text...
+2025-11-23 23:12:37,574 - INFO - Created 16 chunks.
+2025-11-23 23:12:37,574 - INFO - Processing paper 12/50: Large Language Models for Sentiment Analysis to Detect Social Challenges: A Use Case with South African Languages
+2025-11-23 23:12:37,574 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17301v1.pdf
+2025-11-23 23:12:37,574 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17301v1.pdf
+2025-11-23 23:12:37,607 - INFO - Chunking text...
+2025-11-23 23:12:37,638 - INFO - Created 26 chunks.
+2025-11-23 23:12:37,638 - INFO - Processing paper 13/50: Estonian WinoGrande Dataset: Comparative Analysis of LLM Performance on Human and Machine Translation
+2025-11-23 23:12:37,638 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17290v1.pdf
+2025-11-23 23:12:37,638 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17290v1.pdf
+2025-11-23 23:12:37,661 - INFO - Chunking text...
+2025-11-23 23:12:37,693 - INFO - Created 25 chunks.
+2025-11-23 23:12:37,693 - INFO - Processing paper 14/50: Cross-cultural value alignment frameworks for responsible AI governance: Evidence from China-West comparative analysis
+2025-11-23 23:12:37,693 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17256v1.pdf
+2025-11-23 23:12:37,693 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17256v1.pdf
+2025-11-23 23:12:37,802 - INFO - Chunking text...
+2025-11-23 23:12:37,870 - INFO - Created 49 chunks.
+2025-11-23 23:12:37,870 - INFO - Processing paper 15/50: Social-Media Based Personas Challenge: Hybrid Prediction of Common and Rare User Actions on Bluesky
+2025-11-23 23:12:37,870 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17241v1.pdf
+2025-11-23 23:12:37,870 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17241v1.pdf
+2025-11-23 23:12:37,894 - INFO - Chunking text...
+2025-11-23 23:12:37,924 - INFO - Created 22 chunks.
+2025-11-23 23:12:37,924 - INFO - Processing paper 16/50: Lost in Translation and Noise: A Deep Dive into the Failure Modes of VLMs on Real-World Tables
+2025-11-23 23:12:37,924 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17238v1.pdf
+2025-11-23 23:12:37,924 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17238v1.pdf
+2025-11-23 23:12:37,945 - INFO - Chunking text...
+2025-11-23 23:12:37,968 - INFO - Created 20 chunks.
+2025-11-23 23:12:37,968 - INFO - Processing paper 17/50: Parrot: Persuasion and Agreement Robustness Rating of Output Truth -- A Sycophancy Robustness Benchmark for LLMs
+2025-11-23 23:12:37,969 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17220v1.pdf
+2025-11-23 23:12:37,969 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17220v1.pdf
+2025-11-23 23:12:38,003 - INFO - Chunking text...
+2025-11-23 23:12:38,048 - INFO - Created 37 chunks.
+2025-11-23 23:12:38,048 - INFO - Processing paper 18/50: A Simple Yet Strong Baseline for Long-Term Conversational Memory of LLM Agents
+2025-11-23 23:12:38,048 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17208v1.pdf
+2025-11-23 23:12:38,048 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17208v1.pdf
+2025-11-23 23:12:38,084 - INFO - Chunking text...
+2025-11-23 23:12:38,122 - INFO - Created 33 chunks.
+2025-11-23 23:12:38,122 - INFO - Processing paper 19/50: E$^3$-Pruner: Towards Efficient, Economical, and Effective Layer Pruning for Large Language Models
+2025-11-23 23:12:38,122 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17205v1.pdf
+2025-11-23 23:12:38,122 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17205v1.pdf
+2025-11-23 23:12:38,210 - INFO - Chunking text...
+2025-11-23 23:12:38,255 - INFO - Created 38 chunks.
+2025-11-23 23:12:38,255 - INFO - Processing paper 20/50: AutoLink: Autonomous Schema Exploration and Expansion for Scalable Schema Linking in Text-to-SQL at Scale
+2025-11-23 23:12:38,255 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17190v1.pdf
+2025-11-23 23:12:38,255 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17190v1.pdf
+2025-11-23 23:12:38,335 - INFO - Chunking text...
+2025-11-23 23:12:38,407 - INFO - Created 55 chunks.
+2025-11-23 23:12:38,407 - INFO - Processing paper 21/50: Attention-Guided Feature Fusion (AGFF) Model for Integrating Statistical and Semantic Features in News Text Classification
+2025-11-23 23:12:38,407 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17184v1.pdf
+2025-11-23 23:12:38,407 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17184v1.pdf
+2025-11-23 23:12:38,430 - INFO - Chunking text...
+2025-11-23 23:12:38,456 - INFO - Created 18 chunks.
+2025-11-23 23:12:38,456 - INFO - Processing paper 22/50: Hallucinate Less by Thinking More: Aspect-Based Causal Abstention for Large Language Models
+2025-11-23 23:12:38,456 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17170v1.pdf
+2025-11-23 23:12:38,456 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17170v1.pdf
+2025-11-23 23:12:38,516 - INFO - Chunking text...
+2025-11-23 23:12:38,615 - INFO - Created 69 chunks.
+2025-11-23 23:12:38,615 - INFO - Processing paper 23/50: The PLLuM Instruction Corpus
+2025-11-23 23:12:38,615 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17161v1.pdf
+2025-11-23 23:12:38,615 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17161v1.pdf
+2025-11-23 23:12:38,680 - INFO - Chunking text...
+2025-11-23 23:12:38,772 - INFO - Created 68 chunks.
+2025-11-23 23:12:38,772 - INFO - Processing paper 24/50: LangMark: A Multilingual Dataset for Automatic Post-Editing
+2025-11-23 23:12:38,772 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17153v1.pdf
+2025-11-23 23:12:38,772 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17153v1.pdf
+2025-11-23 23:12:38,826 - INFO - Chunking text...
+2025-11-23 23:12:38,866 - INFO - Created 31 chunks.
+2025-11-23 23:12:38,866 - INFO - Processing paper 25/50: Learning to Compress: Unlocking the Potential of Large Language Models for Text Representation
+2025-11-23 23:12:38,866 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17129v1.pdf
+2025-11-23 23:12:38,866 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17129v1.pdf
+2025-11-23 23:12:38,908 - INFO - Chunking text...
+2025-11-23 23:12:38,949 - INFO - Created 35 chunks.
+2025-11-23 23:12:38,949 - INFO - Processing paper 26/50: Training Foundation Models on a Full-Stack AMD Platform: Compute, Networking, and System Design
+2025-11-23 23:12:38,949 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17127v1.pdf
+2025-11-23 23:12:38,949 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17127v1.pdf
+2025-11-23 23:12:39,002 - INFO - Chunking text...
+2025-11-23 23:12:39,073 - INFO - Created 53 chunks.
+2025-11-23 23:12:39,074 - INFO - Processing paper 27/50: Geometric-Disentangelment Unlearning
+2025-11-23 23:12:39,074 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17100v1.pdf
+2025-11-23 23:12:39,074 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17100v1.pdf
+2025-11-23 23:12:39,149 - INFO - Chunking text...
+2025-11-23 23:12:39,226 - INFO - Created 64 chunks.
+2025-11-23 23:12:39,227 - INFO - Processing paper 28/50: MUCH: A Multilingual Claim Hallucination Benchmark
+2025-11-23 23:12:39,227 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17081v1.pdf
+2025-11-23 23:12:39,227 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17081v1.pdf
+2025-11-23 23:12:39,409 - INFO - Chunking text...
+2025-11-23 23:12:39,461 - INFO - Created 42 chunks.
+2025-11-23 23:12:39,461 - INFO - Processing paper 29/50: An Efficient Computational Framework for Discrete Fuzzy Numbers Based on Total Orders
+2025-11-23 23:12:39,462 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17080v1.pdf
+2025-11-23 23:12:39,462 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17080v1.pdf
+2025-11-23 23:12:39,489 - INFO - Chunking text...
+2025-11-23 23:12:39,517 - INFO - Created 28 chunks.
+2025-11-23 23:12:39,518 - INFO - Processing paper 30/50: Principled Design of Interpretable Automated Scoring for Large-Scale Educational Assessments
+2025-11-23 23:12:39,518 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17069v1.pdf
+2025-11-23 23:12:39,518 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17069v1.pdf
+2025-11-23 23:12:39,551 - INFO - Chunking text...
+2025-11-23 23:12:39,583 - INFO - Created 28 chunks.
+2025-11-23 23:12:39,583 - INFO - Processing paper 31/50: Do Vision-Language Models Understand Visual Persuasiveness?
+2025-11-23 23:12:39,583 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17036v1.pdf
+2025-11-23 23:12:39,583 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17036v1.pdf
+2025-11-23 23:12:39,639 - INFO - Chunking text...
+2025-11-23 23:12:39,695 - INFO - Created 41 chunks.
+2025-11-23 23:12:39,695 - INFO - Processing paper 32/50: Supervised Fine Tuning of Large Language Models for Domain Specific Knowledge Graph Construction:A Case Study on Hunan's Historical Celebrities
+2025-11-23 23:12:39,695 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17012v1.pdf
+2025-11-23 23:12:39,695 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17012v1.pdf
+2025-11-23 23:12:39,804 - INFO - Chunking text...
+2025-11-23 23:12:39,871 - INFO - Created 50 chunks.
+2025-11-23 23:12:39,871 - INFO - Processing paper 33/50: Vision Language Models are Confused Tourists
+2025-11-23 23:12:39,871 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.17004v1.pdf
+2025-11-23 23:12:39,871 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.17004v1.pdf
+2025-11-23 23:12:39,915 - INFO - Chunking text...
+2025-11-23 23:12:39,967 - INFO - Created 42 chunks.
+2025-11-23 23:12:39,967 - INFO - Processing paper 34/50: ARQUSUMM: Argument-aware Quantitative Summarization of Online Conversations
+2025-11-23 23:12:39,967 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.16985v1.pdf
+2025-11-23 23:12:39,967 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.16985v1.pdf
+2025-11-23 23:12:40,019 - INFO - Chunking text...
+2025-11-23 23:12:40,054 - INFO - Created 31 chunks.
+2025-11-23 23:12:40,054 - INFO - Processing paper 35/50: OmniScientist: Toward a Co-evolving Ecosystem of Human and AI Scientists
+2025-11-23 23:12:40,054 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.16931v1.pdf
+2025-11-23 23:12:40,054 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.16931v1.pdf
+2025-11-23 23:12:40,158 - INFO - Chunking text...
+2025-11-23 23:12:40,265 - INFO - Created 69 chunks.
+2025-11-23 23:12:40,265 - INFO - Processing paper 36/50: Predicting the Formation of Induction Heads
+2025-11-23 23:12:40,265 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.16893v1.pdf
+2025-11-23 23:12:40,265 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.16893v1.pdf
+2025-11-23 23:12:40,314 - INFO - Chunking text...
+2025-11-23 23:12:40,348 - INFO - Created 30 chunks.
+2025-11-23 23:12:40,348 - INFO - Processing paper 37/50: Deep Improvement Supervision
+2025-11-23 23:12:40,348 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.16886v1.pdf
+2025-11-23 23:12:40,348 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.16886v1.pdf
+2025-11-23 23:12:40,379 - INFO - Chunking text...
+2025-11-23 23:12:40,411 - INFO - Created 27 chunks.
+2025-11-23 23:12:40,411 - INFO - Processing paper 38/50: Improving Latent Reasoning in LLMs via Soft Concept Mixing
+2025-11-23 23:12:40,411 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.16885v1.pdf
+2025-11-23 23:12:40,411 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.16885v1.pdf
+2025-11-23 23:12:40,457 - INFO - Chunking text...
+2025-11-23 23:12:40,472 - INFO - Created 15 chunks.
+2025-11-23 23:12:40,472 - INFO - Processing paper 39/50: ConCISE: A Reference-Free Conciseness Evaluation Metric for LLM-Generated Answers
+2025-11-23 23:12:40,472 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.16846v1.pdf
+2025-11-23 23:12:40,472 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.16846v1.pdf
+2025-11-23 23:12:40,493 - INFO - Chunking text...
+2025-11-23 23:12:40,505 - INFO - Created 12 chunks.
+2025-11-23 23:12:40,506 - INFO - Processing paper 40/50: Fantastic Bugs and Where to Find Them in AI Benchmarks
+2025-11-23 23:12:40,506 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.16842v1.pdf
+2025-11-23 23:12:40,506 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.16842v1.pdf
+2025-11-23 23:12:40,570 - INFO - Chunking text...
+2025-11-23 23:12:40,645 - INFO - Created 56 chunks.
+2025-11-23 23:12:40,645 - INFO - Processing paper 41/50: Cognitive BASIC: An In-Model Interpreted Reasoning Language for LLMs
+2025-11-23 23:12:40,646 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.16837v1.pdf
+2025-11-23 23:12:40,646 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.16837v1.pdf
+2025-11-23 23:12:40,659 - INFO - Chunking text...
+2025-11-23 23:12:40,668 - INFO - Created 7 chunks.
+2025-11-23 23:12:40,668 - INFO - Processing paper 42/50: The Shifting Landscape of Vaccine Discourse: Insights From a Decade of Pre- to Post-COVID-19 Vaccine Posts on Social Media
+2025-11-23 23:12:40,668 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.16832v1.pdf
+2025-11-23 23:12:40,668 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.16832v1.pdf
+2025-11-23 23:12:40,705 - INFO - Chunking text...
+2025-11-23 23:12:40,751 - INFO - Created 36 chunks.
+2025-11-23 23:12:40,752 - INFO - Processing paper 43/50: PEPPER: Perception-Guided Perturbation for Robust Backdoor Defense in Text-to-Image Diffusion Models
+2025-11-23 23:12:40,752 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.16830v1.pdf
+2025-11-23 23:12:40,752 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.16830v1.pdf
+2025-11-23 23:12:40,771 - INFO - Chunking text...
+2025-11-23 23:12:40,786 - INFO - Created 16 chunks.
+2025-11-23 23:12:40,786 - INFO - Processing paper 44/50: Interpretable dimensions support an effect of agentivity and telicity on split intransitivity
+2025-11-23 23:12:40,787 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.16824v1.pdf
+2025-11-23 23:12:40,787 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.16824v1.pdf
+2025-11-23 23:12:40,809 - INFO - Chunking text...
+2025-11-23 23:12:40,832 - INFO - Created 22 chunks.
+2025-11-23 23:12:40,832 - INFO - Processing paper 45/50: From Representation to Enactment: The ABC Framework of the Translating Mind
+2025-11-23 23:12:40,833 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.16811v1.pdf
+2025-11-23 23:12:40,833 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.16811v1.pdf
+2025-11-23 23:12:40,873 - INFO - Chunking text...
+2025-11-23 23:12:40,911 - INFO - Created 28 chunks.
+2025-11-23 23:12:40,911 - INFO - Processing paper 46/50: NALA_MAINZ at BLP-2025 Task 2: A Multi-agent Approach for Bangla Instruction to Python Code Generation
+2025-11-23 23:12:40,911 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.16787v1.pdf
+2025-11-23 23:12:40,912 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.16787v1.pdf
+2025-11-23 23:12:40,934 - INFO - Chunking text...
+2025-11-23 23:12:40,951 - INFO - Created 15 chunks.
+2025-11-23 23:12:40,951 - INFO - Processing paper 47/50: Thinking-while-Generating: Interleaving Textual Reasoning throughout Visual Generation
+2025-11-23 23:12:40,951 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.16671v1.pdf
+2025-11-23 23:12:40,951 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.16671v1.pdf
+2025-11-23 23:12:41,009 - INFO - Chunking text...
+2025-11-23 23:12:41,046 - INFO - Created 32 chunks.
+2025-11-23 23:12:41,046 - INFO - Processing paper 48/50: Nemotron Elastic: Towards Efficient Many-in-One Reasoning LLMs
+2025-11-23 23:12:41,046 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.16664v1.pdf
+2025-11-23 23:12:41,046 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.16664v1.pdf
+2025-11-23 23:12:41,094 - INFO - Chunking text...
+2025-11-23 23:12:41,138 - INFO - Created 34 chunks.
+2025-11-23 23:12:41,138 - INFO - Processing paper 49/50: Comparison of Text-Based and Image-Based Retrieval in Multimodal Retrieval Augmented Generation Large Language Model Systems
+2025-11-23 23:12:41,138 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.16654v1.pdf
+2025-11-23 23:12:41,138 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.16654v1.pdf
+2025-11-23 23:12:41,156 - INFO - Chunking text...
+2025-11-23 23:12:41,181 - INFO - Created 22 chunks.
+2025-11-23 23:12:41,181 - INFO - Processing paper 50/50: Codec2Vec: Self-Supervised Speech Representation Learning Using Neural Speech Codecs
+2025-11-23 23:12:41,181 - INFO - PDF already exists: arxiv_data_rag\pdfs\2511.16639v1.pdf
+2025-11-23 23:12:41,181 - INFO - Extracting text from: arxiv_data_rag\pdfs\2511.16639v1.pdf
+2025-11-23 23:12:41,203 - INFO - Chunking text...
+2025-11-23 23:12:41,226 - INFO - Created 21 chunks.
+Title: Masked-and-Reordered Self-Supervision for Reinforcement Learning from Verifiable Rewards
+URL: http://arxiv.org/abs/2511.17473v1
+PDF Path: arxiv_data_rag\pdfs\2511.17473v1.pdf
+Number of chunks: 30
+First chunk sample: masked - and - reordered self - supervision for reinforcement learning from verifiable rewards zhen wang∗ dp technology zhifeng gao dp technology guolin ke dp technology november 24, 2025 abstract tes...
+2025-11-23 23:12:41,249 - INFO - Saved processed data for 50 papers to arxiv_data_rag\rag_data_20251123_231241.json
+2025-11-23 23:12:41,249 - INFO - RAG data preparation pipeline finished.
+2025-11-23 23:12:41,249 - INFO - 
+=== Sample of Processed Paper ===
+
+Process finished with exit code 0

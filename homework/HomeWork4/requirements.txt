@@ -1,0 +1,6 @@
+requests
+PyMuPDF
+transformers
+sentence-transformers
+torch
+tqdm
