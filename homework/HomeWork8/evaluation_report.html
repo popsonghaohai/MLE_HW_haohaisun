@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimodal Summarization & Reward Modeling Evaluation Report</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .section h3 {
+            color: #764ba2;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            margin-top: 25px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .info-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .info-card .label {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .info-card .value {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .metric-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .metric-card .metric-name {
+            font-size: 0.95em;
+            color: #666;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .metric-card .metric-value {
+            font-size: 2.2em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .metric-card.excellent .metric-value {
+            color: #10b981;
+        }
+
+        .metric-card.good .metric-value {
+            color: #3b82f6;
+        }
+
+        .metric-card.average .metric-value {
+            color: #f59e0b;
+        }
+
+        .paper-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 4px solid #764ba2;
+        }
+
+        .paper-card h4 {
+            color: #333;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .paper-card .summary-box {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 3px solid #ddd;
+        }
+
+        .paper-box .summary-box.generated {
+            border-left-color: #667eea;
+        }
+
+        .paper-box .summary-box.reference {
+            border-left-color: #10b981;
+        }
+
+        .paper-box .summary-label {
+            font-weight: bold;
+            color: #666;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+        }
+
+        .metrics-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .metric-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #e0e7ff;
+            color: #4338ca;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Evaluation Report: Multimodal Summarization</h1>
+            <div class="subtitle">Reward Modeling for Academic Paper Summarization</div>
+        </div>
+
+        <div class="content">
+            <!-- Basic Information -->
+            <div class="section">
+                <h2>Evaluation Information</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="label">Evaluation Time</div>
+                        <div class="value">2026-01-13 12:56:53</div>
+                    </div>
+                    <div class="info-card">
+                        <div class="label">Total Papers</div>
+                        <div class="value">3</div>
+                    </div>
+                    <div class="info-card">
+                        <div class="label">Reward Model</div>
+                        <div class="value">DeBERTa-v3</div>
+                    </div>
+                    <div class="info-card">
+                        <div class="label">Generator Model</div>
+                        <div class="value">Qwen3:8b</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Metrics -->
+            <div class="section">
+                <h2>Summary Metrics</h2>
+
+                <h3>Reward Model Score</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-name">Average Reward Score</div>
+                        <div class="metric-value">0.1130</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 11.3%"></div>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-name">Standard Deviation</div>
+                        <div class="metric-value">0.0014</div>
+                    </div>
+                </div>
+
+                <h3>ROUGE Scores</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card excellent">
+                        <div class="metric-name">ROUGE-1</div>
+                        <div class="metric-value">0.4283</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 42.8%"></div>
+                        </div>
+                    </div>
+                    <div class="metric-card good">
+                        <div class="metric-name">ROUGE-2</div>
+                        <div class="metric-value">0.1728</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 17.3%"></div>
+                        </div>
+                    </div>
+                    <div class="metric-card good">
+                        <div class="metric-name">ROUGE-L</div>
+                        <div class="metric-value">0.3018</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 30.2%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>BERTScore</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card good">
+                        <div class="metric-name">Precision</div>
+                        <div class="metric-value">0.6762</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 67.6%"></div>
+                        </div>
+                    </div>
+                    <div class="metric-card excellent">
+                        <div class="metric-name">Recall</div>
+                        <div class="metric-value">0.8002</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80.0%"></div>
+                        </div>
+                    </div>
+                    <div class="metric-card good">
+                        <div class="metric-name">F1 Score</div>
+                        <div class="metric-value">0.7327</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 73.3%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Results -->
+            <div class="section">
+                <h2>Detailed Evaluation Results</h2>
+                
+            <div class="paper-card">
+                <h4>paper_001</h4>
+
+                <div class="summary-box generated">
+                    <div class="summary-label">Generated Summary</div>
+                    <div>The paper introduces the Transformer, a novel architecture that replaces traditional recurrent and convolutional networks with an attention mechanism, enabling efficient modeling of global dependencies. This design allows for greater parallelization and achieves state-of-the-art translation performance after just 12 hours of training on eight P100 GPUs.</div>
+                </div>
+
+                <div class="summary-box reference">
+                    <div class="summary-label">Reference Summary</div>
+                    <div>The Transformer is a new neural network architecture for sequence transduction that relies entirely on attention mechanisms, enabling better parallelization and state-of-the-art translation quality.</div>
+                </div>
+
+                <div class="metrics-row">
+                    <div class="metric-badge">Reward Score: 0.1115</div>
+                    <div class="metric-badge">ROUGE-1: 0.4211</div>
+                       <div class="metric-badge">ROUGE-2: 0.1622</div>
+                       <div class="metric-badge">ROUGE-L: 0.3684</div>
+                    <div class="metric-badge">BERTScore F1: 0.7616</div>
+                </div>
+            </div>
+            
+            <div class="paper-card">
+                <h4>paper_002</h4>
+
+                <div class="summary-box generated">
+                    <div class="summary-label">Generated Summary</div>
+                    <div>The paper introduces BERT, a language representation model that pre-trains deep bidirectional Transformer-based representations by jointly leveraging both left and right context across all layers. This approach enables state-of-the-art performance on diverse NLP tasks through minimal fine-tuning, as the pre-trained model requires only an additional output layer for task-specific adaptation.</div>
+                </div>
+
+                <div class="summary-box reference">
+                    <div class="summary-label">Reference Summary</div>
+                    <div>BERT is a bidirectional Transformer language model that can be pre-trained on unlabeled text and fine-tuned for various NLP tasks with minimal architecture changes.</div>
+                </div>
+
+                <div class="metrics-row">
+                    <div class="metric-badge">Reward Score: 0.1128</div>
+                    <div class="metric-badge">ROUGE-1: 0.3810</div>
+                       <div class="metric-badge">ROUGE-2: 0.0976</div>
+                       <div class="metric-badge">ROUGE-L: 0.2381</div>
+                    <div class="metric-badge">BERTScore F1: 0.7104</div>
+                </div>
+            </div>
+            
+            <div class="paper-card">
+                <h4>paper_003</h4>
+
+                <div class="summary-box generated">
+                    <div class="summary-label">Generated Summary</div>
+                    <div>The paper introduces GPT-3, demonstrating that scaling up language models significantly enhances their few-shot learning capabilities, often rivaling state-of-the-art fine-tuning methods. By pre-training on vast text corpora, the model achieves strong performance across diverse NLP tasks without extensive task-specific training. This highlights the potential of large-scale language models to generalize effectively with minimal supervision.</div>
+                </div>
+
+                <div class="summary-box reference">
+                    <div class="summary-label">Reference Summary</div>
+                    <div>GPT-3 is a large-scale language model that achieves strong few-shot learning performance across many NLP tasks without task-specific fine-tuning.</div>
+                </div>
+
+                <div class="metrics-row">
+                    <div class="metric-badge">Reward Score: 0.1148</div>
+                    <div class="metric-badge">ROUGE-1: 0.4828</div>
+                       <div class="metric-badge">ROUGE-2: 0.2588</div>
+                       <div class="metric-badge">ROUGE-L: 0.2989</div>
+                    <div class="metric-badge">BERTScore F1: 0.7263</div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Generated by Multimodal Summarization Reward Model Evaluation System</p>
+            <p>Week 8 Assignment - Multimodal Summarization and Reward Modeling</p>
+        </div>
+    </div>
+</body>
+</html>

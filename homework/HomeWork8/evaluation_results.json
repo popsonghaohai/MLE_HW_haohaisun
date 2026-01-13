@@ -1,0 +1,72 @@
+{
+  "timestamp": "2026-01-13 12:56:53",
+  "model_path": "reward_model",
+  "ollama_model": "qwen3:8b",
+  "paper_results": [
+    {
+      "paper_id": "paper_001",
+      "title": "Attention Is All You Need",
+      "generated_summary": "The paper introduces the Transformer, a novel architecture that replaces traditional recurrent and convolutional networks with an attention mechanism, enabling efficient modeling of global dependencies. This design allows for greater parallelization and achieves state-of-the-art translation performance after just 12 hours of training on eight P100 GPUs.",
+      "reference_summary": "The Transformer is a new neural network architecture for sequence transduction that relies entirely on attention mechanisms, enabling better parallelization and state-of-the-art translation quality.",
+      "reward_score": 0.11151023954153061,
+      "rouge_scores": {
+        "rouge1": 0.42105263157894735,
+        "rouge2": 0.16216216216216217,
+        "rougeL": 0.3684210526315789,
+        "rougeLsum": 0.3684210526315789
+      },
+      "bertscore": {
+        "precision": 0.7117899060249329,
+        "recall": 0.8187916278839111,
+        "f1": 0.7615505456924438
+      }
+    },
+    {
+      "paper_id": "paper_002",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers",
+      "generated_summary": "The paper introduces BERT, a language representation model that pre-trains deep bidirectional Transformer-based representations by jointly leveraging both left and right context across all layers. This approach enables state-of-the-art performance on diverse NLP tasks through minimal fine-tuning, as the pre-trained model requires only an additional output layer for task-specific adaptation.",
+      "reference_summary": "BERT is a bidirectional Transformer language model that can be pre-trained on unlabeled text and fine-tuned for various NLP tasks with minimal architecture changes.",
+      "reward_score": 0.11279133707284927,
+      "rouge_scores": {
+        "rouge1": 0.380952380952381,
+        "rouge2": 0.09756097560975609,
+        "rougeL": 0.23809523809523808,
+        "rougeLsum": 0.23809523809523808
+      },
+      "bertscore": {
+        "precision": 0.662551760673523,
+        "recall": 0.7656228542327881,
+        "f1": 0.7103680372238159
+      }
+    },
+    {
+      "paper_id": "paper_003",
+      "title": "GPT-3: Language Models are Few-Shot Learners",
+      "generated_summary": "The paper introduces GPT-3, demonstrating that scaling up language models significantly enhances their few-shot learning capabilities, often rivaling state-of-the-art fine-tuning methods. By pre-training on vast text corpora, the model achieves strong performance across diverse NLP tasks without extensive task-specific training. This highlights the potential of large-scale language models to generalize effectively with minimal supervision.",
+      "reference_summary": "GPT-3 is a large-scale language model that achieves strong few-shot learning performance across many NLP tasks without task-specific fine-tuning.",
+      "reward_score": 0.1148483008146286,
+      "rouge_scores": {
+        "rouge1": 0.48275862068965514,
+        "rouge2": 0.25882352941176473,
+        "rougeL": 0.29885057471264365,
+        "rougeLsum": 0.29885057471264365
+      },
+      "bertscore": {
+        "precision": 0.6541646718978882,
+        "recall": 0.8163319826126099,
+        "f1": 0.7263063788414001
+      }
+    }
+  ],
+  "summary": {
+    "total_papers": 3,
+    "avg_reward_score": 0.11304995914300282,
+    "std_reward_score": 0.0013749732838900372,
+    "avg_rouge1": 0.4282545444069945,
+    "avg_rouge2": 0.17284888906122764,
+    "avg_rougeL": 0.3017889551464869,
+    "avg_bertscore_precision": 0.6761687795321146,
+    "avg_bertscore_recall": 0.8002488215764364,
+    "avg_bertscore_f1": 0.73274165391922
+  }
+}
