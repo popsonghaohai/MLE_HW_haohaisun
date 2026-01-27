@@ -1,0 +1,63 @@
+# Voice-Enabled Academic Research Assistant Requirements
+
+# Core dependencies
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# PDF processing
+PyMuPDF>=1.23.0
+pymupdf>=1.23.0
+
+# ML/AI
+transformers>=4.35.0
+sentence-transformers>=2.2.0
+torch>=2.1.0
+torchvision>=0.16.0
+
+# Progress bars
+tqdm>=4.66.0
+
+# API clients
+openai>=1.6.0
+notion-client>=2.2.0
+
+# Web API server
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+python-multipart>=0.0.6
+
+# ArXiv parsing
+feedparser>=6.0.10
+arxiv>=1.4.0
+
+# Vector database
+chromadb>=0.4.18
+
+# Local ASR - Whisper
+openai-whisper>=20231117
+faster-whisper>=0.10.0
+
+# Local TTS
+pyttsx3>=2.90
+edge-tts>=6.1.9
+TTS>=0.21.0
+
+# Audio processing
+librosa>=0.10.0
+soundfile>=0.12.0
+pydub>=0.25.0
+
+# Web search (optional - can use Tavily or similar)
+tavily-python>=0.3.0
+
+# Async support
+aiohttp>=3.9.0
+aiofiles>=23.2.0
+
+# CORS support
+python-json-logger>=2.0.7
+
+# Utilities
+httpx>=0.25.0
